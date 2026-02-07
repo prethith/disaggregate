@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="blog-intro">{{ .Content }}</section>
+
+{{ $latest := first 6 site.RegularPages.ByDate.Reverse }} {{ partial
+"post-list.html" (dict "Pages" $latest "Title" "Recent posts:") }}
+<section class="view-all">
+    <span>[↗] </span>
+    <a href="/posts/">View all posts</a>
+</section>
+{{ end }}

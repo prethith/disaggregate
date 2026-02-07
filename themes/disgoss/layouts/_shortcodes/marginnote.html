@@ -1,0 +1,3 @@
+<label for="mn-{{ .Ordinal }}" class="sidenote-toggle">⊕</label>
+<input type="checkbox" id="mn-{{ .Ordinal }}" class="sidenote-toggle" />
+<span class="sidenote">{{ .Inner | markdownify }}</span>

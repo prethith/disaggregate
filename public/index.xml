@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 Jan 2026 21:48:04 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Second Post</title>
+      <link>http://localhost:1313/posts/second-post/</link>
+      <pubDate>Sat, 31 Jan 2026 21:48:04 +0530</pubDate>
+      <guid>http://localhost:1313/posts/second-post/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.google.com&#34;&gt;this&lt;/a&gt; is a link.&lt;/p&gt;&#xA;&lt;p&gt;This is some text with a sidenote&lt;label for=&#34;sn-0&#34; class=&#34;sidenote-toggle sidenote-number&#34;&gt;&lt;/label&gt;&#xA;&lt;input type=&#34;checkbox&#34; id=&#34;sn-0&#34; class=&#34;sidenote-toggle&#34; /&gt;&#xA;&lt;span class=&#34;sidenote&#34;&gt;This appears in the right margin with a number.&lt;/span&gt;&#xA; and the text continues.&lt;/p&gt;&#xA;&lt;p&gt;You can also use left sidenotes&lt;label for=&#34;sn-1&#34; class=&#34;sidenote-toggle sidenote-number&#34;&gt;&lt;/label&gt;&#xA;&lt;input type=&#34;checkbox&#34; id=&#34;sn-1&#34; class=&#34;sidenote-toggle&#34; /&gt;&#xA;&lt;span class=&#34;sidenote left&#34;&gt;This appears in the left margin.&lt;/span&gt;&#xA; which are aligned to the right.&lt;/p&gt;&#xA;&lt;p&gt;Or margin notes without numbers&lt;label for=&#34;mn-2&#34; class=&#34;sidenote-toggle&#34;&gt;⊕&lt;/label&gt;&#xA;&lt;input type=&#34;checkbox&#34; id=&#34;mn-2&#34; class=&#34;sidenote-toggle&#34; /&gt;&#xA;&lt;span class=&#34;sidenote&#34;&gt;This has no number, just a ⊕ symbol to toggle on mobile.&lt;/span&gt;&#xA; for supplementary info.&lt;/p&gt;&#xA;&lt;p&gt;1972’s The Godfather began with a sombre and arresting monologue which was later used to redefine the epic tale of the Corleone family as a parable of American capitalism itself. Bonasera, artfully shrouded in darkness by Gordon Willis (his eye sockets are pitch black throughout the monologue), laments the assault on his daughter and the failure of the American judicial system in punishing her assaulters. To remedy this, he seeks the help of Vito Corleone, the primary listener in all of this (his consigliere Tom Hagen is also in attendance).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>First Post</title>
+      <link>http://localhost:1313/posts/first-post/</link>
+      <pubDate>Sat, 31 Jan 2026 20:53:48 +0530</pubDate>
+      <guid>http://localhost:1313/posts/first-post/</guid>
+      <description>&lt;p&gt;hi&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

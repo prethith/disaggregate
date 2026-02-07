@@ -1,0 +1,8 @@
+{{ define "main" }}
+
+<h2 class="post-list-title">
+    {{ if eq .Kind "taxonomy" }} Tags: {{ else }} All posts: {{ end }}
+</h2>
+
+{{ partial "post-list.html" (dict "Pages" .Pages "IsTaxonomy" (eq .Kind
+"taxonomy") ) }} {{ end }}
