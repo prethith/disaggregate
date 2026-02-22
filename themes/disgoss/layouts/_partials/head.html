@@ -4,4 +4,6 @@
     {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
     site.Title }}{{ end }}
 </title>
+{{ partial "head/seo.html" . }}
 {{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}
+{{ if hugo.IsProduction }}<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>{{ end }}

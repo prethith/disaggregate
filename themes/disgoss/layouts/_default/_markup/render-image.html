@@ -5,6 +5,6 @@
   {{- $caption = strings.TrimSpace (index $parts 1) -}}
 {{- end -}}
 <figure{{ with $class }} class="{{ . }}"{{ end }}>
-  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" loading="lazy" decoding="async">
   {{- with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
 </figure>

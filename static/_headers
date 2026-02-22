@@ -1,0 +1,32 @@
+# Cloudflare Pages cache headers
+# Fingerprinted assets get immutable long-lived cache; HTML stays fresh.
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/posts/*/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+/posts/*/*.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/posts/*/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate

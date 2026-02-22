@@ -1,4 +1,8 @@
-baseURL = '/'
+baseURL = 'https://disaggregate.pages.dev/'
 languageCode = 'en-us'
 title = 'Disaggregate'
 theme = 'disgoss'
+enableRobotsTXT = true
+
+[params]
+  description = 'Film, music, and culture reviews.'

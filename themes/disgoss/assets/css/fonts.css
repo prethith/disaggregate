@@ -1,46 +1,16 @@
 /* ================================================
    fonts.css — @font-face declarations
    CabinetGrotesk (UI / headings) + Spectral (body)
+   Weights kept: Regular (400) + Bold (700) for Cabinet;
+                 Regular, Italic, Bold, BoldItalic for Spectral.
    ================================================ */
 
 /* --- CabinetGrotesk --- */
 
 @font-face {
     font-family: "CabinetGrotesk";
-    src: url("/fonts/CabinetGrotesk/CabinetGrotesk-Thin.woff2") format("woff2");
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "CabinetGrotesk";
-    src: url("/fonts/CabinetGrotesk/CabinetGrotesk-Extralight.woff2") format("woff2");
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "CabinetGrotesk";
-    src: url("/fonts/CabinetGrotesk/CabinetGrotesk-Light.woff2") format("woff2");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "CabinetGrotesk";
     src: url("/fonts/CabinetGrotesk/CabinetGrotesk-Regular.woff2") format("woff2");
     font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "CabinetGrotesk";
-    src: url("/fonts/CabinetGrotesk/CabinetGrotesk-Medium.woff2") format("woff2");
-    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
@@ -53,40 +23,8 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: "CabinetGrotesk";
-    src: url("/fonts/CabinetGrotesk/CabinetGrotesk-Extrabold.woff2") format("woff2");
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "CabinetGrotesk";
-    src: url("/fonts/CabinetGrotesk/CabinetGrotesk-Black.woff2") format("woff2");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
 
 /* --- Spectral --- */
-
-@font-face {
-    font-family: "Spectral";
-    src: url("/fonts/Spectral/Spectral-Light.woff2") format("woff2");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Spectral";
-    src: url("/fonts/Spectral/Spectral-LightItalic.woff2") format("woff2");
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
 
 @font-face {
     font-family: "Spectral";
@@ -101,22 +39,6 @@
     src: url("/fonts/Spectral/Spectral-Italic.woff2") format("woff2");
     font-weight: 400;
     font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Spectral";
-    src: url("/fonts/Spectral/Spectral-Medium.woff2") format("woff2");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Spectral";
-    src: url("/fonts/Spectral/Spectral-SemiBold.woff2") format("woff2");
-    font-weight: 600;
-    font-style: normal;
     font-display: swap;
 }
 
