@@ -5,20 +5,15 @@ title = 'Second Post'
 description = 'Why moving judgment to the edges wins in the long run.'
 +++
 
-1972’s The Godfather began with a sombre and arresting monologue which was later used to redefine the epic tale of the Corleone family as a parable of American capitalism itself. Bonasera, artfully shrouded in darkness by Gordon Willis (his eye sockets are pitch black throughout the monologue), laments the assault on his daughter and the failure of the American judicial system in punishing her assaulters. To remedy this, he seeks the help of Vito Corleone, the primary listener in all of this (his consigliere Tom Hagen is also in attendance). [^1]
-
-[^1]: Smith, John. _The History of Everything_. Academic Press, 2020, p. 42
+1972’s The Godfather began with a sombre and arresting monologue which was later used to redefine the epic tale of the Corleone family as a parable of American capitalism itself. Bonasera, artfully shrouded in darkness by Gordon Willis (his eye sockets are pitch black throughout the monologue), laments the assault on his daughter and the failure of the American judicial system in punishing her assaulters. To remedy this, he seeks the help of Vito Corleone, the primary listener in all of this (his consigliere Tom Hagen is also in attendance).
 
 The opening of Miller’s Crossing, on the other hand, is diametrically opposed to every facet of the aforementioned scene, with an intent to parody that defines the mood of the film. Here, a buffoonish caricature of an Italian mobster (bald, just like Bonasera) played wonderfully by Jon Polito confronts an Irish party boss and mobster Leo (Albert Finney) whom he accuses of protecting a bookie who has been cheating him. Johnny Caspar, the _eye-tie_, is not shrouded in shadow; rather, he uses the full width of the illumination to express little annoyances using exaggerated facial expressions. The scene devolves into hilarious bickering, with Caspar leaving after issuing a threat whose bluff is immediately called out.
 
 What follows is perhaps one of the most convoluted plots of any movie I’ve watched so far, with a love triangle, gang factions, corrupt police, bookies, and whatnot. Characters are introduced before they appear on screen, and information is splurged out in such large volume and at dizzying speeds that it often becomes very difficult to keep up. But don’t be fooled by this apparent flaw: this is the point of Miller’s Crossing. An homage to Hollywood mobster flicks from the noir era, Miller’s Crossing is less about the specifics and more about the aura and the essence: consider the scene where Leo fires a machine-gun non-stop for nearly 2 whole minutes as the plot to kill him fails, with no regard for the expected shortage of bullets. The Coens had filled the gun with just as many bullets as was needed to sell the point.
 
+![Miller's Crossing by the Coen Brothers](miller-woods.jpg "wide | _Miller's Crossing_, Coen Brothers")
 
-
-The Coens are known for the outlandish characters that populate and energize the movies, as well as the absurd subplots that reveal the chaotic, almost nihilistic streak that characterize their movies, and Miller’s Crossing is no different. Set in Prohibition-era US with all its inter-white-ethnic strife (characters frequently complain of “potato-eaters” and “dagos”) and hilariously corrupt police officers (the two police raid scenes are a barrel of laughs), a small-yet-talented cast gives out tremendous performances that truly elevate the farcical quality of the film, most especially John Turturro as the slimy Bernie Bernbaum.
-
-
-![Romance by Fontaines DC](romance.jpg "square | _Romance_, Fontaines D.C.")
+The Coens are known for the outlandish characters that populate and energize the movies, as well as the absurd subplots that reveal the chaotic, almost nihilistic streak that characterize their movies, and Miller’s Crossing is no different. Set in Prohibition-era US with all its inter-white ethnic strife (characters frequently complain of “potato-eaters” and “dagos”) and hilariously corrupt police officers (the two police raid scenes are a barrel of laughs), a small-yet-talented cast gives out tremendous performances that truly elevate the farcical quality of the film, most especially John Turturro as the slimy Bernie Bernbaum.
 
 Equally entertaining is the dialogue that differentiates and punctuates the movie: traditional mobster flicks were light on eloquence and hard on quips and smugness and back talk. In the world of the Coens’ Miller’s Crossing however, characters are given the liberty of greater eloquence which adds greatly to the farcical nature of the film, and only complementing the charm of Byrnes’ cool-headed strategist.
 
