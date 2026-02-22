@@ -1,6 +1,6 @@
 +++
 date = '2026-01-31T21:48:04+05:30'
-draft = false
+draft = true
 title = 'Second Post'
 description = 'Why moving judgment to the edges wins in the long run.'
 +++
