@@ -283,9 +283,9 @@ nav a.active {
     display: none;
 }
 
-.post-description {
+.post-description-list {
     font-family: var(--font-heading);
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
     color: var(--c-fg-muted);
     display: block;
     margin-top: 0.25rem;
