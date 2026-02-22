@@ -1,10 +1,14 @@
 {{ define "main" }}
-<section class="blog-intro">{{ .Content }}</section>
-
-{{ $latest := first 6 site.RegularPages.ByDate.Reverse }} {{ partial
-"post-list.html" (dict "Pages" $latest "Title" "Recent posts:") }}
-<section class="view-all">
-    <span>[↗] </span>
-    <a href="/posts/">View all posts</a>
+<header class="blog-intro">
+{{ .Content }}
+</header>
+<section class="posts-section" aria-labelledby="posts-heading">
+    <div class="posts-list-header">
+        <p id="posts-heading" class="section-title">Latest posts</p>
+        <span class="header-line" aria-hidden="true"></span>
+        <a href="/posts/" class="view-all-link">View all <span aria-hidden="true">›</span></a>
+    </div>
+    {{ $latest := first 6 site.RegularPages.ByDate.Reverse }}
+    {{ partial "post-list.html" (dict "Pages" $latest) }}
 </section>
 {{ end }}

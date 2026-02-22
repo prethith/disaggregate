@@ -1,20 +1,20 @@
 <!doctype html>
-<html
-    lang="{{ site.Language.LanguageCode }}"
-    dir="{{ or site.Language.LanguageDirection `ltr` }}"
->
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
     <head>
         {{ partial "head.html" . }}
     </head>
+
     <body>
-        <div class="sitewide-layout">
-            <header class="sitewide-header">
-                {{ partial "header.html" . }}
-            </header>
-            <main class="sitewide-main">{{ block "main" . }} {{ end }}</main>
-            <footer class="sitewide-footer">
-                <div class="footer-inner">{{ partial "footer.html" . }}</div>
-            </footer>
-        </div>
+        {{ partial "header.html" . }}
+        <main class="grid">
+            {{ block "main" . }} {{ end }}
+        </main>
+        <footer class="grid sitewide-footer">
+            <div class="footer-inner">
+            {{ partial "footer.html" . }}
+            </div>
+        </footer>
     </body>
+
 </html>

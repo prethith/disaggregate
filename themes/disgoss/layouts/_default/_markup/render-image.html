@@ -1,0 +1,10 @@
+{{- $parts   := split .Title "|" -}}
+{{- $class   := strings.TrimSpace (index $parts 0) -}}
+{{- $caption := "" -}}
+{{- if gt (len $parts) 1 -}}
+  {{- $caption = strings.TrimSpace (index $parts 1) -}}
+{{- end -}}
+<figure{{ with $class }} class="{{ . }}"{{ end }}>
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
+  {{- with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+</figure>

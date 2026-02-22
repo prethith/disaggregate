@@ -1,402 +1,440 @@
+/* Fonts are defined in fonts.css, loaded separately via head/css.html */
+/* footnotes.css is loaded separately via head/css.html */
+
 :root {
-    /*base colours*/
+    /* Colours */
+    --c-bg:       #f7f4f0;   /* warm off-white — paper-like */
+    --c-fg:       #28231e;   /* warm near-black */
+    --c-fg-muted: #6e6560;   /* warm mid-gray for dates, captions */
+    --c-border:   #d4ccc6;   /* warm rule color */
+    --c-highlight: #1d27ed;  /* blue accent for hover / active states */
 
-    --light-bg: #fcf8f9 /* warm, off-white paper-like*/
-    --light-fg: #2c2c35; /*soft black text for light theme*/
-    --light-fg-muted: #727169; /* muted gray */
+    --c-code-bg: #16161d;
+    --c-code-fg: #c8c093;
 
-    --light-accent: #7e9cd8; /* calm blue */
-    --light-accent-bright: #7fb4ca; /* bright blue */
+    /* Backwards-compatible aliases used in templates */
+    --light-bg: var(--c-bg);
+    --light-fg: var(--c-fg);
+    --highlight-color: var(--c-highlight);
 
-    --light-code-bg: #16161d; /* darker background */
-    --light-code-fg: #c8c093; /* warm beige */
+    /* Typefaces */
+    --font-heading: "CabinetGrotesk", sans-serif;  /* UI, nav, headings, dates */
+    --font-body:    "Spectral", serif;             /* body text, article content, blog intro */
 
-    --light-border: #2a2a37;
-    --light-hover-bg: #363646;
+    /* ── Type Scale ──────────────────────────────────────────────────────────
+       Major Third ratio (×1.25), base 18 px.
+       Use only these tokens; do not add ad-hoc font-size values elsewhere.
+       ──────────────────────────────────────────────────────────────────── */
+    --fs-xs:   0.8rem;     /*  ~13 px — timestamps, fine print  */
+    --fs-sm:   0.975rem;   /*   14 px — dates, footer, captions */
+    --fs-md:   1.15rem;       /*   16 px — nav links, UI labels    */
+    --fs-base: 1.3rem;    /*   20 px — body / article text     */
+    --fs-lg:   1.375rem;   /*   22 px — section labels          */
+    --fs-xl:   1.563rem;   /*   25 px — h2                      */
+    --fs-2xl:  1.953rem;   /*   31 px — h1 / post title         */
+
+    /* Line heights */
+    --lh-tight:   1.2;
+    --lh-normal:  1.3;
+    --lh-relaxed: 1.45;
+
+    /* Layout */
+    --l--grid-width-narrow: 48rem;
+    --l--grid-width-wide:   72rem;
 }
 
-@font-face {
-    font-family: "Libertinus Sans";
-    src: url("/fonts/Libertinus/LibertinusSans-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: "Libertinus Sans";
-    src: url("/fonts/Libertinus/LibertinusSans-Italic.woff2") format("woff2");
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Libertinus Sans";
-    src: url("/fonts/Libertinus/LibertinusSans-Bold.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-* {
+/* ================================================================
+   Reset
+   ================================================================ */
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
+/* ================================================================
+   Base
+   ================================================================ */
 body {
-    background-color: var(--light-bg);
-    color: var(--light-fg);
-    font-family: sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 1rem;
-    min-height: 100vh;
-    min-height: 100dvh;
-    display: block;
-    counter-reset: sidenote-counter;
-    /*max-width: 768px;*/
-}
-
-/* ================================
-    Layout
-   ================================ */
-.sitewide-layout {
-    display: grid;
-    grid-template-columns: 1fr min(80ch, 100%) 1fr;
-    min-height: 100%;
-    min-width: 100%;
-    margin: 0 auto;
-}
-
-.sitewide-layout > * {
-    grid-column: 2;
-    padding-inline: 1.25rem;
-}
-
-.sitewide-header {
-    padding-block: 8rem 2rem;
-}
-
-.sitewide-header a {
-    text-decoration: none;
-}
-
-/* ================================
-   Main content
-   ================================ */
-/* ================================
-   Typography
-   ================================ */
-
-h1 {
-    font-size: 1.6rem;
-    line-height: 1.25;
-    margin-bottom: 0.5rem;
-}
-
-h2 {
-    font-size: 1.25rem;
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
-}
-
-p {
-    margin-block: 0.5rem;
-}
-
-time {
-    font-size: 0.85rem;
-    color: #666;
-}
-
-/* ================================
-   Navbar
-   ================================ */
-nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 0.95rem;
-}
-
-nav a:hover {
-    color: #000;
-}
-
-nav a.active {
-    font-weight: 500;
-}
-/* ================================
-   Homepage
-   ================================ */
-
-.view-all {
-    margin-top: 2.5rem;
-    font-size: 0.9rem;
-}
-
-.view-all a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.view-all a:hover {
-    text-decoration: underline;
-}
-
-.blog-intro {
-    margin-block: 1rem;
-}
-
-.section-title {
-    margin-top: 3rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-.post-list {
-    display: grid;
-    row-gap: 0rem;
-    justify-items: center;
-}
-
-.post-row {
-    width: 100%;
-    justify-self: center;
-    margin: 0;
-    padding: 0;
-}
-
-.post-row a {
-    display: grid;
-    grid-template-columns: auto minmax(1rem, 1fr) auto;
-    align-items: center;
-    column-gap: 0.25rem;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    width: 100%;
-    transition:
-        color 0.25s ease,
-        background-color 0.25s ease;
-    padding: 0.15rem 0;
-}
-
-.post-title {
-    font-size: 0.95rem;
+    background-color: var(--c-bg);
+    color: var(--c-fg);
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+    line-height: var(--lh-relaxed);
     font-weight: 400;
-    white-space: nowrap;
-    color: #555;
+    min-height: 100dvh;
+    counter-reset: sidenote-counter;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.post-rule {
-    height: 1px;
-    background-color: #ddd;
-    width: 95%;
-    justify-self: center;
-    transition: background-color 0.25s ease;
+::selection {
+    background-color: rgba(180, 140, 80, 0.2);   /* warm amber tint */
+    color: inherit;
 }
 
-.post-date {
-    font-size: 0.95rem;
-    color: #555;
-    white-space: nowrap;
-    text-align: right;
-}
-
-.post-row a:hover .post-rule {
-    background-color: #111;
-    height: 2px;
-}
-
-.post-row a:hover .post-title,
-.post-row a:hover .post-date {
-    color: #111;
-}
-
-/* ================================
-   Links
-   ================================ */
 a {
     color: inherit;
     text-decoration: underline;
     text-underline-offset: 0.25em;
 }
 
-/* ================================
-   footer
-   ================================ */
+p {
+    margin-block: 1.25rem;
+}
+
+
+/* ================================================================
+   Headings  (CabinetGrotesk everywhere — UI / structural)
+   ================================================================ */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    line-height: var(--lh-tight);
+}
+
+/* Default article-level heading sizes (overridden in .content below) */
+h2 { font-size: var(--fs-xl); }
+h3 { font-size: var(--fs-lg); }
+h4 { font-size: var(--fs-md); }
+h5 { font-size: var(--fs-sm); }
+h6 { font-size: var(--fs-xs); }
+
+time {
+    font-family: var(--font-heading);
+    font-size: var(--fs-md);
+    color: var(--c-fg-muted);
+}
+
+
+/* ================================================================
+   Layout grid
+   ================================================================ */
+.grid {
+    display: grid;
+    grid-template-columns:
+        [full-start] minmax(1rem, 1fr)
+        [wide-start] minmax(0, calc((var(--l--grid-width-wide) - var(--l--grid-width-narrow)) / 2))
+        [narrow-start] var(--l--grid-width-narrow) [narrow-end]
+        minmax(0, calc((var(--l--grid-width-wide) - var(--l--grid-width-narrow)) / 2)) [wide-end]
+        minmax(1rem, 1fr) [full-end];
+    gap: 0 1rem;
+}
+
+
+nav > *,
+main > *,
+footer > * {
+    grid-column: narrow;
+}
+
+
+/* ================================================================
+   Nav
+   ================================================================ */
+nav {
+    font-family: var(--font-heading);
+    margin-top: 4rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav a {
+    font-size: var(--fs-md);
+    text-decoration: none;
+    color: var(--c-fg);
+}
+
+nav a:hover {
+    color: var(--c-highlight);
+}
+
+nav a.active {
+    font-weight: 500;
+}
+
+
+/* ================================================================
+   Homepage
+   ================================================================ */
+
+/* Blog intro — rendered Markdown from index page; Spectral (body) */
+.blog-intro {
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+    line-height: var(--lh-relaxed);
+    margin-block: 1rem;
+}
+
+/* "Latest posts" label + rule + "View all" row */
+.posts-list-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    font-family: var(--font-heading);
+    margin-top: 3rem;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.header-line {
+    flex: 1;
+    height: 1px;
+    background-color: var(--c-border);
+}
+
+.view-all-link {
+    font-family: var(--font-heading);
+    font-size: var(--fs-sm);
+    text-decoration: none;
+    color: var(--c-fg-muted);
+    white-space: nowrap;
+}
+
+.view-all-link:hover {
+    color: var(--c-highlight);
+}
+
+/* Legacy .view-all block — hidden */
+.view-all {
+    display: none;
+}
+
+
+/* ================================================================
+   Post list  (homepage + /posts/)
+   All list-level chrome is CabinetGrotesk
+   ================================================================ */
+.post-list {
+    font-family: var(--font-heading);
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.post-row {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0;
+}
+
+.post-row a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0.15rem 0;
+    transition: color 0.3s ease;
+}
+
+.post-meta-line {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    align-items: baseline;
+}
+
+.post-date {
+    font-family: var(--font-heading);
+    font-size: var(--fs-sm);
+    color: var(--c-fg-muted);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.post-title {
+    font-family: var(--font-heading);
+    font-size: var(--fs-md);
+    font-weight: 500;
+    margin: 0;
+}
+
+.post-title:hover {
+    color: var(--c-highlight);
+}
+
+.post-sep {
+    display: none;
+}
+
+.post-description {
+    font-family: var(--font-heading);
+    font-size: var(--fs-md);
+    color: var(--c-fg-muted);
+    display: block;
+    margin-top: 0.25rem;
+    width: 100%;
+}
+
+
+/* ================================================================
+   Footer
+   ================================================================ */
 .sitewide-footer {
+    font-family: var(--font-heading);
+    font-size: var(--fs-sm);
+    color: var(--c-fg-muted);
     margin-top: 1.5rem;
     padding-block: 1rem;
-    font-size: 0.85rem;
-    color: #666;
 }
+
 .footer-inner {
-    border-top: 1px solid #222;
+    border-top: 1px solid var(--c-fg);
     padding-block: 1rem;
 }
 
-/* ================================
-   Post
-   ================================ */
 
-.post {
-    position: relative;
+/* ================================================================
+   Post page
+   ================================================================ */
+.post-header {
+    font-family: var(--font-heading);
+    margin-block: 1.5rem;
 }
 
+.post-header > h1 {
+    font-size: clamp(var(--fs-xl), 2vw + 1rem, var(--fs-2xl));
+    font-weight: 500;
+    line-height: var(--lh-tight);
+    margin-bottom: 0.5rem;
+}
+
+/* Article body — Spectral */
 .content {
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+    line-height: var(--lh-relaxed);
     text-wrap: pretty;
     hyphens: manual;
-    max-width: 65ch;
+    max-width: 72ch;
+    grid-column: full-start / full-end;
+    align-content: start;
+    display: grid;
+    grid-template-columns: subgrid;
 }
 
-/* ================================
-   Sidenotes
-   ================================ */
 
-/* Sidenote styling */
-.sidenote {
-    font-size: 0.8rem;
-    float: right;
-    clear: right;
-    width: 18vw;
-    margin-right: -20vw;
-    margin-bottom: 1em;
-    margin-top: 0.3rem;
-    text-indent: 0;
-    text-align: left;
-    line-height: 1.4;
-    color: var(--light-fg-muted);
+/* Make contents of content follow the narrow style */
+.content > * {
+    grid-column: narrow-start / narrow-end;
 }
 
-/* Left sidenotes (optional) */
-.sidenote.left {
-    float: left;
-    margin-left: -20vw;
-    margin-right: 0;
-    text-align: right;
+figure {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Sidenote counter */
-.sidenote-number {
-    counter-increment: sidenote-counter;
+.square {
+    grid-column: narrow-start / narrow-end;
 }
 
-.sidenote-number::after,
-.sidenote::before {
-    position: relative;
-    vertical-align: baseline;
+.square > img {
+    height: auto;
+    width: 100%;
 }
 
-/* Number in main content */
-.sidenote-number::after {
-    content: counter(sidenote-counter);
-    font-size: 0.7rem;
-    top: -0.5rem;
-    left: 0.1rem;
-    color: var(--light-accent);
+/* Figure goes wide */
+.wide {
+    grid-column: wide-start / wide-end;
 }
 
-/* Number in front of sidenote */
-.sidenote-number ~ .sidenote::before {
-    content: counter(sidenote-counter) " ";
-    font-size: 0.7rem;
-    top: -0.5rem;
-    color: var(--light-accent);
+.wide > img {
+    height: auto;
+    width: 100%;
 }
 
-/* Toggle controls */
-label.sidenote-toggle:not(.sidenote-number) {
-    display: none;
+figcaption {
+    font-family: var(--font-heading);
+    font-size: var(--fs-sm);
+    color: var(--c-fg-muted);
+    text-align: center;
+    margin-top: 0.5rem;
 }
 
-label.sidenote-toggle {
-    cursor: pointer;
+/* In-article headings: CabinetGrotesk (structural, not prose) */
+.content h2 {
+    font-size: var(--fs-xl);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
 }
 
-input.sidenote-toggle {
-    display: none;
+.content h3 {
+    font-size: var(--fs-lg);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 }
 
-/* Sidenotes inside blockquotes */
-blockquote .sidenote {
-    margin-right: -24vw;
-    width: 18vw;
+.content h4 {
+    font-size: var(--fs-md);
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
 }
 
-/* ================================
-   Responsive
-   ================================ */
 
-@media (max-width: 1024px) {
-    body {
-        padding: 0.5rem;
-        display: flex;
-        align-items: flex-start;
+/* ================================================================
+   Responsive — redefine scale tokens at the :root for mobile.
+   All font-size declarations above use the tokens, so they
+   automatically adapt; no need to repeat every selector.
+   ================================================================ */
+@media (max-width: 896px) {
+    :root {
+        --fs-md: 1rem;
+        --fs-base: 1.15rem;    /* 18 px */
+        --fs-lg:   1.25rem;     /* 20 px */
+        --fs-xl:   1.5rem;      /* 24 px */
+        --fs-2xl:  1.875rem;    /* 30 px */
     }
 
-    .sitewide-layout > * {
-        padding-inline: 0.5rem;
+    .section-title {
+        font-size: var(--fs-md);
     }
 
-    .sitewide-header {
-        padding-block: 1rem;
+    nav {
+        margin-top: 2rem;
+    }
+
+    .grid {
+        grid-template-columns:
+            [full-start] 0.4rem
+            [wide-start narrow-start] minmax(0, 1fr) [narrow-end wide-end]
+            0.4rem [full-end];
     }
 
     .content {
-        text-wrap: pretty;
         max-width: 100%;
     }
 
-    /* Show toggle label on mobile */
-    label.sidenote-toggle:not(.sidenote-number) {
-        display: inline;
-        color: var(--light-accent);
+    .wide {
+        grid-column: narrow-start / narrow-end;
     }
 
-    /* Hide sidenotes by default */
-    .sidenote {
-        display: none;
+    .posts-list-header {
+        margin-top: 2rem;
     }
 
-    /* Show when toggled */
-    .sidenote-toggle:checked + .sidenote {
-        display: block;
-        margin: 0.5rem 1.25rem 1rem 0.5rem;
-        float: left;
-        left: 1rem;
-        clear: both;
-        width: 95%;
-        text-align: left;
-    }
-
-    /* Left sidenotes also align left on mobile */
-    .sidenote-toggle:checked + .sidenote.left {
-        text-align: left;
-    }
-
-    /* Blockquote sidenotes */
-    blockquote .sidenote {
-        margin-right: -25vw;
-        width: 16vw;
-    }
-}
-
-/* Hide footnotes on desktop if using sidenotes */
-@media (min-width: 1051px) {
-    .footnotes {
-        display: none;
+    .post-meta-line {
+        flex-direction: column;
+        gap: 0.25rem;
     }
 }
