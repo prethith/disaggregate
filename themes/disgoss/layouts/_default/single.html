@@ -1,6 +1,7 @@
 {{ define "main" }}
 <header class="post-header">
     <h1>{{ .Title }}</h1>
+    <p class="post-description"><em>{{ .Description }}</em></p>
     <time class="post-publish-date">{{ .Date.Format "Jan 2, 2006" }}</time>
 </header>
 
