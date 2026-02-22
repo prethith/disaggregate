@@ -35,4 +35,4 @@ content:
 
       - name: body
         label: Content
-        type: rich-text
+        type: markdown
