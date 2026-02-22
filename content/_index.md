@@ -4,6 +4,6 @@ draft = false
 title = ''
 +++
 
-I seek to understand the systems that structure our reality and I write to explore how those systems will shape the future. My aspiration is to guide humanity towards a world where work is optional and abundance is universal.
+In 2020, as the spectre of inflation returned to political and economic discourse, debate hardened around a single number that, in the eyes of inflation hawks, had to be brought down no matter what. But, as Adam Tooze argued, inflation had to be **disaggregated** — broken down sector by sector, cause by cause, interest by interest. 
 
-I'm a self-taught engineer, UC Davis dropout, ex-Procore IPO employee, and I founded Bradley Digital to help startups grow. Now, I'm looking for my next adventure.
+_Disaggregate_ takes the same view: large numbers and sweeping claims conceal far more than they reveal; they compress interests, structures, and contingencies into a single headline figure. The aim here is to pull those figures apart, to read crises strategically and understand the root cause of events that shape the world around us.  
