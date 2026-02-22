@@ -1,8 +1,8 @@
 +++
 date = '2026-01-31T21:48:04+05:30'
 draft = true
-title = 'Second Post'
-description = 'Why moving judgment to the edges wins in the long run.'
+title = "Miller's Crossing"
+description = "A review of the Coen brothers' classic"
 +++
 
 1972’s The Godfather began with a sombre and arresting monologue which was later used to redefine the epic tale of the Corleone family as a parable of American capitalism itself. Bonasera, artfully shrouded in darkness by Gordon Willis (his eye sockets are pitch black throughout the monologue), laments the assault on his daughter and the failure of the American judicial system in punishing her assaulters. To remedy this, he seeks the help of Vito Corleone, the primary listener in all of this (his consigliere Tom Hagen is also in attendance).

@@ -325,6 +325,11 @@ nav a.active {
     margin-bottom: 0.5rem;
 }
 
+.post-description {
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+}
+
 /* Article body — Spectral */
 .content {
     font-family: var(--font-body);
