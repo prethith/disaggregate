@@ -437,6 +437,42 @@ blockquote footer {
 
 
 /* ================================================================
+   Tags
+   ================================================================ */
+.post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 2.5rem;
+}
+
+.tag-chip {
+    font-family: var(--font-heading);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: var(--c-fg-muted);
+    border: 1px solid var(--c-border);
+    padding: 0.15em 0.55em;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.tag-chip:hover {
+    color: var(--c-highlight);
+    border-color: var(--c-highlight);
+}
+
+.tag-count {
+    font-weight: 400;
+    margin-left: 0.3em;
+    color: var(--c-fg-muted);
+}
+
+
+
+/* ================================================================
    Responsive — redefine scale tokens at the :root for mobile.
    All font-size declarations above use the tokens, so they
    automatically adapt; no need to repeat every selector.

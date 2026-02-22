@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="posts-list-header" style="margin-top: 1.5rem;">
+    <p class="section-title">Tags</p>
+    <span class="header-line" aria-hidden="true"></span>
+</div>
+<ul class="post-list">
+    {{ range .Data.Terms.Alphabetical }}
+    <li class="post-row">
+        <a href="{{ .Page.RelPermalink }}">
+            <div class="post-meta-line">
+                <span class="post-date">{{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }}</span>
+                <p class="post-title">{{ .Page.Title }} ›</p>
+            </div>
+        </a>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}

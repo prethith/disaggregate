@@ -1,0 +1,7 @@
+{{ define "main" }}
+<div class="posts-list-header">
+    <p class="section-title">{{ .Title }}</p>
+    <span class="header-line" aria-hidden="true"></span>
+</div>
+{{ partial "post-list.html" (dict "Pages" .Pages) }}
+{{ end }}

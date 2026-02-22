@@ -1,22 +1,24 @@
-{{- $isTaxonomy := .IsTaxonomy -}}
+{{- $pages := .Pages -}}
+{{- if .IsTaxonomy -}}
+  {{- $pages = .RegularPages -}}
+{{- end -}}
 
 <ul class="post-list">
-    {{ range .Pages.ByDate.Reverse }}
+    {{ range $pages.ByDate.Reverse }}
     <li class="post-row">
         <a href="{{ .RelPermalink }}">
-
             <div class="post-meta-line">
-                <time class="post-date" datetime="{{ .Date.Format " 2006-01-02" }}">
+                <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
                     {{ .Date.Format "Jan 2 2006" }}
                 </time>
-
                 <p class="post-title">{{ .Title }} ›</p>
-
             </div>
             {{ with .Params.description }}
             <p class="post-description-list">{{ . }}</p>
             {{ end }}
         </a>
     </li>
+    {{ else }}
+    <li>No posts found.</li>
     {{ end }}
 </ul>

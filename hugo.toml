@@ -4,5 +4,8 @@ title = 'Disaggregate'
 theme = 'disgoss'
 enableRobotsTXT = true
 
+[taxonomies]
+  tag = 'tags'
+
 [params]
   description = 'Film, music, and culture reviews.'

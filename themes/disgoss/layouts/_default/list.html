@@ -1,10 +1,11 @@
 {{ define "main" }}
-{{ $title := "" }}
-{{ if eq .Kind "taxonomy" }}
-    {{ $title = "Tags:" }}
-{{ else }}
-    {{ $title = "All posts:" }}
-{{ end }}
-
-{{ partial "post-list.html" (dict "Pages" .Pages "IsTaxonomy" (eq .Kind "taxonomy")) }} 
+<div class="posts-list-header">
+    {{ if eq .Kind "term" }}
+    <p class="section-title">{{ .Title }}</p>
+    {{ else }}
+    <p class="section-title">All posts</p>
+    {{ end }}
+    <span class="header-line" aria-hidden="true"></span>
+</div>
+{{ partial "post-list.html" (dict "Pages" .RegularPages) }}
 {{ end }}

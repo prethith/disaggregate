@@ -15,6 +15,10 @@ disableKinds = ["taxonomy", "term"]
     url = '/posts'
     weight = 20
 
+  [[menus.main]]
+    name = 'Tags'
+    url = '/tags'
+    weight = 30
 
 [module]
   [module.hugoVersion]

@@ -10,7 +10,7 @@ content:
     filename: "{primary}.md"
 
     view:
-      fields: [title, date, draft, description]
+      fields: [title, date, draft, description, tags]
 
     fields:
       - name: title
@@ -32,6 +32,13 @@ content:
         label: Description
         type: text
         required: true
+    
+      - name: tags
+        label: Tags
+        type: list
+        item_type: string
+        required: false
+        hint: "Add one or more tags for this post"
 
       - name: body
         label: Content
