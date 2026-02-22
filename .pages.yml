@@ -1,0 +1,33 @@
+media:
+  input: static/posts
+  output: /posts
+
+content:
+  - name: blog
+    label: Blog Posts
+    type: collection
+    path: content/posts
+    filename: "{primary}.md"
+
+    view:
+      fields: [title, date, draft]
+
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+
+      - name: date
+        label: Date
+        type: date
+        required: true
+
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+
+      - name: body
+        label: Content
+        type: rich-text
