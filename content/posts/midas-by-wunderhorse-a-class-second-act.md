@@ -3,6 +3,7 @@ title: "Midas by Wunderhorse: A-class second-act"
 date: 2024-08-30
 draft: false
 description: Embracing a new grungy, raw sound, Wunderhorse takes a big bet on Midas.
+tags: music, review
 ---
 I imagine that it’s extremely difficult for a four-piece band today to craft an album that sounds good, and set them apart from other four-piece outfits of today, from back then, and going forward. I imagine it’s even more difficult for said band to even attempt the daunting challenge that will be their second album: do they press on in the same direction, and risk earning the tag of “sell-out” or worse, “plain-boring”; or do they pivot to an entirely different sound, and alienate the small fanbase they’ve collected? This was the challenge faced by UK indie rock outfit Wunderhorse, as they began preparation for their sophomore album, _Midas_. Will they be able to best _Cub_, a phenomenal rock album with dreamy tones, so good that it hardly felt like a debut? My answer wouldn’t be too confident, although the critics seem confident that they have.
 
