@@ -3,7 +3,9 @@ title: "Midas by Wunderhorse: A-class second-act"
 date: 2024-08-30
 draft: false
 description: Embracing a new grungy, raw sound, Wunderhorse takes a big bet on Midas.
-tags: music, review
+tags:
+  - Music
+  - Review
 ---
 I imagine that it’s extremely difficult for a four-piece band today to craft an album that sounds good, and set them apart from other four-piece outfits of today, from back then, and going forward. I imagine it’s even more difficult for said band to even attempt the daunting challenge that will be their second album: do they press on in the same direction, and risk earning the tag of “sell-out” or worse, “plain-boring”; or do they pivot to an entirely different sound, and alienate the small fanbase they’ve collected? This was the challenge faced by UK indie rock outfit Wunderhorse, as they began preparation for their sophomore album, _Midas_. Will they be able to best _Cub_, a phenomenal rock album with dreamy tones, so good that it hardly felt like a debut? My answer wouldn’t be too confident, although the critics seem confident that they have.
 
@@ -17,9 +19,7 @@ Wunderhorse displayed a decent range of sounds on _Cub_, ranging from the incred
 
 Starting off with lead single _Midas_, which sounds much better as an introduction to the album’s atmosphere than a single, the album works its way up into strong grunge territory with thrashing guitars and drums. _Rain_, the second track and easily my favourite, is enchantingly dark and sombre. Next up are _Emily_, a heartbreak song in grunge style, followed by the more upbeat _Silver_, which features the darkest lyrics on a Wunderhorse feature describing a toxic relationship, very reminiscent of Nirvana:
 
-> _So hush now, baby, don’t you cry_
-> _I know you’re singing deep inside_
->_I broke your wings so you won’t fly_
+> _So hush now, baby, don’t you cry_ _I know you’re singing deep inside_ _I broke your wings so you won’t fly_
 
 This is followed by _Arizona_, where the album’s production and the rock sounds really shine along with the band’s beautiful description of blooming flowers during rain in the Arizona desert. This apogee in the album is capped off by _Superman_: a meditative, almost cathartic first-person account of what it would be like to be Superman, flying over rooftops, arms spread like an eagle.
 
