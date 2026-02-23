@@ -7,8 +7,6 @@ content:
     label: Blog Posts
     type: collection
     path: content/posts
-    filename: "{primary}.md"
-
     view:
       fields: [title, date, draft, description, tags]
 
