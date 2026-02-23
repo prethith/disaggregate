@@ -3,6 +3,7 @@ title: Prologue
 date: 2024-02-10
 draft: false
 description: A Ragpicker’s Dream
+tags: fiction
 ---
 The ragpicker paused to catch his breath, leaning on his staff, atop a massive mountain of garbage, one of many stretching endlessly along the coast. Ahead lay the daunting task of filling his rucksack with whatever trinkets he could find from among the heaps before the monsoon clouds flattened them into putrid bogs; before the coppers took him in for stealing what belonged to no one; before the rising tide of the sea claimed them for the fishermen, who now fished for trinkets like he did, the seaside rendered too toxic for fish. Like every other ragpicker who scavenged the garbage bogs, and unlike the fishermen, he couldn’t cast wide nets and wait idly.
 
