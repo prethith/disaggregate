@@ -19,7 +19,11 @@ Wunderhorse displayed a decent range of sounds on _Cub_, ranging from the incred
 
 Starting off with lead single _Midas_, which sounds much better as an introduction to the album’s atmosphere than a single, the album works its way up into strong grunge territory with thrashing guitars and drums. _Rain_, the second track and easily my favourite, is enchantingly dark and sombre. Next up are _Emily_, a heartbreak song in grunge style, followed by the more upbeat _Silver_, which features the darkest lyrics on a Wunderhorse feature describing a toxic relationship, very reminiscent of Nirvana:
 
-> _So hush now, baby, don’t you cry_ _I know you’re singing deep inside_ _I broke your wings so you won’t fly_
+> _So hush now, baby, don’t you cry_
+> 
+> _I know you’re singing deep inside_
+> 
+> _I broke your wings so you won’t fly_
 
 This is followed by _Arizona_, where the album’s production and the rock sounds really shine along with the band’s beautiful description of blooming flowers during rain in the Arizona desert. This apogee in the album is capped off by _Superman_: a meditative, almost cathartic first-person account of what it would be like to be Superman, flying over rooftops, arms spread like an eagle.
 
