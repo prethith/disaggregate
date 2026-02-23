@@ -3,7 +3,9 @@ title: "‘Athena’ Review: Visually stunning, yet frustratingly shallow"
 date: 2023-07-28
 draft: false
 description: A review of 'Athena', directed by Romain Gavras.
-tags: ["film", "review"]
+tags:
+  - Film
+  - Review
 ---
 Romain Gavras’ _Athena_ kicks off with the all-too-familiar tragedy of our era: the death of Idir, a 13-year-old, at the hands of the police. The video of the killing has gone viral on social media, inflaming tensions between France’s Algerian Muslim community and the police, an institution the former has always distrusted. As Abdel, the older brother, addresses the press at the police precinct, the camera is set into motion to focus on the literal powder keg: an attack on the precinct set into motion by Karim, the third brother.
 
