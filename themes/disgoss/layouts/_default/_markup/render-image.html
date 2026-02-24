@@ -1,10 +1,11 @@
 {{- $parts   := split .Title "|" -}}
 {{- $class   := strings.TrimSpace (index $parts 0) -}}
 {{- $caption := "" -}}
+{{- $img := .Destination | safeURL -}}
 {{- if gt (len $parts) 1 -}}
   {{- $caption = strings.TrimSpace (index $parts 1) -}}
 {{- end -}}
 <figure{{ with $class }} class="{{ . }}"{{ end }}>
-  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" loading="lazy" decoding="async">
+  <img src="/cdn-cgi/image/quality=60,format=auto/{{ $img }}" alt="{{ .Text }}" loading="lazy" decoding="async">
   {{- with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
 </figure>
