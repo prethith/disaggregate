@@ -367,6 +367,16 @@ figure {
     width: 100%;
 }
 
+
+.long {
+    grid-column: narrow-start / narrow-end;
+}
+
+.long > img {
+    height: auto;
+    width: 50%;
+}
+
 /* Figure goes wide */
 .wide {
     grid-column: wide-start / wide-end;

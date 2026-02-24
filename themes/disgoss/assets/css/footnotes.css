@@ -5,18 +5,19 @@
 /* Inline reference — render as blue [1] superscript */
 a.footnote-ref {
     /* color: var(--c-highlight); */
-    text-decoration: underline;
-    font-family: var(--font-heading);
-    font-weight: 500;
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-weight: 800;
     font-size: 1rem;
     cursor: pointer;
+    margin: 0.25rem;
 }
 
 /* a.footnote-ref::before { content: '['; }
 a.footnote-ref::after  { content: ']'; } */
 
 a.footnote-ref:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Footnotes section at the bottom of a post */
@@ -154,4 +155,8 @@ a.footnote-backref:hover { color: var(--c-highlight); }
 
 @media (max-width: 896px) {
     .fn-tooltip { display: none !important; }
+
+    a.footnote-ref { 
+        font-size: 0.85rem;
+    }
 }
