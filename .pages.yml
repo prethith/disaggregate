@@ -42,4 +42,4 @@ content:
 
       - name: body
         label: Content
-        type: text
+        type: rich-text
