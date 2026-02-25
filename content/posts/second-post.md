@@ -13,7 +13,8 @@ The opening of Miller’s Crossing, on the other hand, is diametrically opposed 
 
 What follows is perhaps one of the most convoluted plots of any movie I’ve watched so far, with a love triangle, gang factions, corrupt police, bookies, and whatnot. Characters are introduced before they appear on screen, and information is splurged out in such large volume and at dizzying speeds that it often becomes very difficult to keep up. But don’t be fooled by this apparent flaw: this is the point of Miller’s Crossing. An homage to Hollywood mobster flicks from the noir era, Miller’s Crossing is less about the specifics and more about the aura and the essence: consider the scene where Leo fires a machine-gun non-stop for nearly 2 whole minutes as the plot to kill him fails, with no regard for the expected shortage of bullets. The Coens had filled the gun with just as many bullets as was needed to sell the point.
 
-![Miller's Crossing by the Coen Brothers](miller-woods.jpg "_Miller's Crossing_,   directed by the Coen brothers"){.wide}
+![Miller's Crossing by the Coen Brothers](miller-woods.jpg "_Miller's Crossing_,   directed by the Coen brothers")
+{.wide}
 
 The Coens are known for the outlandish characters that populate and energize the movies, as well as the absurd subplots that reveal the chaotic, almost nihilistic streak that characterize their movies, and Miller’s Crossing is no different. Set in Prohibition-era US with all its inter-white ethnic strife (characters frequently complain of “potato-eaters” and “dagos”) and hilariously corrupt police officers (the two police raid scenes are a barrel of laughs), a small-yet-talented cast gives out tremendous performances that truly elevate the farcical quality of the film, most especially John Turturro as the slimy Bernie Bernbaum.
 

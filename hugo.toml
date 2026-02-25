@@ -9,3 +9,10 @@ enableRobotsTXT = true
 
 [params]
   description = 'Film, music, and culture reviews.'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true

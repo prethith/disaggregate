@@ -20,7 +20,8 @@ Calouste Gulbenkian was arguably the richest and most influential man most peopl
 
 The shrewd negotiation skills for which Gulbenkian would be remembered emerged on the world stage in 1907 when he brokered the merger between the Royal Dutch Petroleum Company and the British firm Shell, laying the foundations for what would become the Royal Dutch Shell Company (now known as Shell). In the process, he secured a lucrative personal stake - a practice that would define his method for the decades to come.
 
-![Calouste Gulbenkian](https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gulbenkian_enclos.jpg/960px-Gulbenkian_enclos.jpg "Calouste Gulbenkian, widely credited to be the first businessman to exploit Iraqi oil, at _Les Enclos_, his garden retreat in Deauville. Source: Wikipedia"){.long}
+![Calouste Gulbenkian](https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gulbenkian_enclos.jpg/960px-Gulbenkian_enclos.jpg "Calouste Gulbenkian, widely credited to be the first businessman to exploit Iraqi oil, at _Les Enclos_, his garden retreat in Deauville. Source: Wikipedia")
+{.long}
 
 Gulbenkian's career-defining moment came in 1928 when he used his famed negotiation skills to establish the Turkish Petroleum Company and draw up the Red Line Agreement between British, American, and French oil interests to exploit oil in the former Ottoman Empire, in which he fought tooth and nail to secure a 5% stake for his firm Partex, and soon thereafter in all major oil companies operating in the Middle East - earning him the moniker "Mr. Five Percent".[^2]
 
@@ -35,6 +36,7 @@ In 1942, after the fall of France during the Second World War, Gulbenkian follow
 When Gulbenkian settled in Portugal, the country was under the rule of António de Oliveira Salazar, architect of the authoritarian Estado Novo regime. The contrast could not be more striking. Salazar's Estado Novo was corporatist, nationalist, deeply Catholic, isolationist, and wary of foreign entanglements. Gulbenkian, by contrast, embodied the cosmopolitan capitalism of the late nineteenth and early twentieth centuries: an Armenian born in the Ottoman Empire, educated in Britain, naturalized as a British citizen, negotiating oil concessions across the Middle East, and serving as Persia's commercial representative in France. The struggle between the two forces would come to define the troubles that the Gulbenkian Foundation was to face.
 
 ![Salazar and the Estado Novo](https://network.grupoabril.com.br/wp-content/uploads/sites/4/2017/03/imageedit_34_6716858863.png?quality=10 'Salazar, pictured in the placard, established the "Estado Novo", a conservative dictatorship that venerated "God, Fatherland, and Family", with the Catholic Church playing a central role in social life. Source: [Guiado Studente](https://guiadoestudante.abril.com.br/curso-enem/brasil-de-olho-na-historia/)')
+{.wide}
 
 ### The Foundation
 
@@ -42,7 +44,8 @@ By the time of his death in 1955, Gulbenkian was among the wealthiest men in the
 
 After his death, the question of his immense fortune and massive art collection took on national significance in Portugal, where the Salazar regime, presiding over a stagnant economy, would fight for control over the estate. The regime was ready to grant charitable tax exempt status to the Foundation only on the condition that the Board have a majority of Portuguese nationals. Radcliffe resigned in protest of the Salazar regime's imposition, followed by Essayan, leaving behind Perdigão, who had publicly pushed for more Portuguese control, and in private, was corresponding with Salazar and future Prime Minister Marcello Caetano.
 
-![José de Azeredo Perdigão](https://gulbenkian.pt/en/51415_jose-de-azeredo-perdigao-_conferencia-do-dr-azeredo-perdigao_4x3-2/ "At one point, José de Azeredo Perdigão, who served as president of the Foundation until his death in 1993, diverted $16m from the Foundation's funds to the Salazar regime. Image source: [Calouste Gulbenkian Foundation](https://gulbenkian.pt/en/persons/jose-de-azeredo-perdigao/)"){.square}
+![José de Azeredo Perdigão](https://gulbenkian.pt/en/51415_jose-de-azeredo-perdigao-_conferencia-do-dr-azeredo-perdigao_4x3-2/ "At one point, José de Azeredo Perdigão, who served as president of the Foundation until his death in 1993, diverted $16m from the Foundation's funds to the Salazar regime. Image source: [Calouste Gulbenkian Foundation](https://gulbenkian.pt/en/persons/jose-de-azeredo-perdigao/)")
+{.square}
 
 In 1956, Perdigão formalized this "Portuguese capture" of the Foundation, becoming its first president. Under his tenure, which lasted until his death in 1993, Gulbenkian's universalism was abandoned as Perdigão increasingly associated the Foundation and himself with the Salazar regime and its conservative social values. Its funds were frequently diverted to "plug holes" in Portugal's welfare budget, fund charitable activities across the country, and also fund Roman Catholic missionary activities in the colonies. The share of grants distributed in Portugal rose from an initial 42% to an overwhelming 85%—leaving only 15% to serve Gulbenkian's transnational vision.
 
@@ -54,7 +57,8 @@ The Foundation survived the purges of the Revolution, and stands today as one of
 
 Until 1952, the Diocese of Cochin had been administered by Portuguese bishops. By a papal bull that same year, the diocese of Alleppey was created, splitting the old Cochin diocese, which now fell under its first indigenous bishop, Dr. Alexander Edezhath, who was succeeded by Dr. Joseph Kureethra in 1975.[^9]
 
-![Bishop Dr. Joseph Kureethra](https://toponimialisboa.wordpress.com/wp-content/uploads/2017/08/rua-bispo-de-cochim-foto.jpg "Bishop Dr. Joseph Kureethra, the second indigenous Bishop of Kochi, who laid down the vision for the Indo-Portuguese Museum. Image source: [Toponímia de Lisboa](https://toponimialisboa.wordpress.com/2017/08/28/a-rua-bispo-de-cochim-d-joseph-kureethara/)"){.long}
+![Bishop Dr. Joseph Kureethra](https://toponimialisboa.wordpress.com/wp-content/uploads/2017/08/rua-bispo-de-cochim-foto.jpg "Bishop Dr. Joseph Kureethra, the second indigenous Bishop of Kochi, who laid down the vision for the Indo-Portuguese Museum. Image source: [Toponímia de Lisboa](https://toponimialisboa.wordpress.com/2017/08/28/a-rua-bispo-de-cochim-d-joseph-kureethara/)")
+{.long}
 
 Kureethra presided over a number of significant events in Malayali Roman Catholicism during his tenure. Most notably, in 1984, the Santa Cruz Cathedral at Fort Kochi was elevated to the status of Santa Cruz Basilica.[^10] According to the Diocese of Cochin, Kureethra was a polyglot, fluent in English, Malayalam, Portuguese, among others. He was also a historian who helped establish the Historical Archives of the Cochin Diocese and the Padroado Museum, for which he was awarded the Order of the Knight Commander of Prince Henry the Navigator by the Portuguese President Dr. Mario Soares.
 
