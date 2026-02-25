@@ -24,3 +24,11 @@ disableKinds = ["taxonomy", "term"]
   [module.hugoVersion]
     extended = false
     min = '0.146.0'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        title = true
+        block = true
+      wrapStandAloneImageWithinParagraph = false

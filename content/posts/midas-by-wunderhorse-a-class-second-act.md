@@ -15,7 +15,7 @@ I was initially unenthused when the first two singles for the album, _Midas_ and
 
 Wunderhorse displayed a decent range of sounds on _Cub_, ranging from the incredibly addictive riffs in _Leader of the Pack_ to the psychedelic rock influences in _Poppy_, all the way down to the supremely serene, almost spiritual _Morphine_. But _Midas_ is a lot less diverse, and a lot more focused. With a new sound embracing a grungy, messy texture with jagged edges (almost as a tribute to Nirvana’s _In Utero_, since both albums were recorded at Pachyderm Studios), Midas is the result of a band that is bold and unwilling to stick to the same-old.
 
-![Midas by Wunderhorse](https://onthejunglefloor.com/cdn/shop/files/Wunderhorse-Midas.jpg?v=1732867897 "square | _Midas_ by Wunderhorse. Courtesy [On The Jungle Floor](https://onthejunglefloor.com/)")
+![Midas by Wunderhorse](https://onthejunglefloor.com/cdn/shop/files/Wunderhorse-Midas.jpg?v=1732867897 "_Midas_ by Wunderhorse. Courtesy [On The Jungle Floor](https://onthejunglefloor.com/)"){.square}
 
 Starting off with lead single _Midas_, which sounds much better as an introduction to the album’s atmosphere than a single, the album works its way up into strong grunge territory with thrashing guitars and drums. _Rain_, the second track and easily my favourite, is enchantingly dark and sombre. Next up are _Emily_, a heartbreak song in grunge style, followed by the more upbeat _Silver_, which features the darkest lyrics on a Wunderhorse feature describing a toxic relationship, very reminiscent of Nirvana:
 
