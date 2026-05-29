@@ -46,9 +46,9 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
             </div>
         </header>
 
-        <div class="post-body">
+        <article class="post-body">
             <slot />
-        </div>
+        </article>
 
         <nav class="post-nav" aria-label="Post navigation">
             {prev ? (
@@ -66,14 +66,24 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
     </article>
 
     <script>
-        const refs = document.querySelectorAll<HTMLAnchorElement>('a[data-footnote-ref]');
+        // A note source pairs an inline trigger element with a getter for its
+        // body HTML. Footnotes follow their href to the bottom list; sidenotes
+        // read the hidden body the component emitted next to the marker.
+        type NoteSource = { trigger: HTMLElement; getContent: () => string; label: number };
 
-        if (refs.length) {
+        const footnoteRefs = Array.from(
+            document.querySelectorAll<HTMLAnchorElement>('a[data-footnote-ref]')
+        );
+        const sidenotes = Array.from(
+            document.querySelectorAll<HTMLElement>('.sidenote')
+        );
+
+        if (footnoteRefs.length || sidenotes.length) {
             const isDesktop = () =>
                 window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
             // Pull a footnote's HTML by following the ref's href, minus the backref arrow.
-            const contentOf = (a: HTMLAnchorElement) => {
+            const footnoteContent = (a: HTMLAnchorElement) => {
                 const id = decodeURIComponent(a.getAttribute('href')!.slice(1));
                 const li = document.getElementById(id);
                 if (!li) return '';
@@ -82,6 +92,21 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
                 return clone.innerHTML;
             };
 
+            const sources: NoteSource[] = [
+                ...footnoteRefs.map((a, i) => ({
+                    trigger: a as HTMLElement,
+                    getContent: () => footnoteContent(a),
+                    label: i + 1,
+                })),
+                ...sidenotes.map((sn, i) => {
+                    const marker = sn.querySelector<HTMLElement>('.sidenote-ref')!;
+                    const body = sn.querySelector<HTMLElement>('.sidenote-body')!;
+                    // Sidenotes are numbered independently, in document order.
+                    marker.textContent = String(i + 1);
+                    return { trigger: marker, getContent: () => body.innerHTML, label: i + 1 };
+                }),
+            ];
+
             // --- Desktop tooltip ---
             const tip = document.createElement('div');
             tip.className = 'fn-tooltip';
@@ -89,11 +114,11 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
             document.body.appendChild(tip);
 
             let hideTimer: ReturnType<typeof setTimeout>;
-            const showTip = (a: HTMLAnchorElement) => {
+            const showTip = (trigger: HTMLElement, html: string) => {
                 clearTimeout(hideTimer);
-                tip.innerHTML = contentOf(a);
+                tip.innerHTML = html;
                 tip.classList.add('visible');
-                const r = a.getBoundingClientRect();
+                const r = trigger.getBoundingClientRect();
                 const t = tip.getBoundingClientRect();
                 let left = r.left + r.width / 2 - t.width / 2;
                 left = Math.max(8, Math.min(left, window.innerWidth - t.width - 8));
@@ -125,8 +150,8 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 
             const dBody = drawer.querySelector<HTMLElement>('.fn-drawer-body')!;
             const dLabel = drawer.querySelector<HTMLElement>('.fn-drawer-label')!;
-            const openDrawer = (a: HTMLAnchorElement, n: number) => {
-                dBody.innerHTML = contentOf(a);
+            const openDrawer = (html: string, n: number) => {
+                dBody.innerHTML = html;
                 dLabel.textContent = `Note ${n}`;
                 backdrop.classList.add('open');
                 drawer.classList.add('open');
@@ -141,15 +166,15 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
                 if (e.key === 'Escape') closeDrawer();
             });
 
-            refs.forEach((a, i) => {
-                a.addEventListener('mouseenter', () => { if (isDesktop()) showTip(a); });
-                a.addEventListener('mouseleave', () => { if (isDesktop()) hideTip(); });
-                a.addEventListener('focus', () => { if (isDesktop()) showTip(a); });
-                a.addEventListener('blur', () => { if (isDesktop()) hideTip(); });
-                a.addEventListener('click', e => {
+            sources.forEach(({ trigger, getContent, label }) => {
+                trigger.addEventListener('mouseenter', () => { if (isDesktop()) showTip(trigger, getContent()); });
+                trigger.addEventListener('mouseleave', () => { if (isDesktop()) hideTip(); });
+                trigger.addEventListener('focus', () => { if (isDesktop()) showTip(trigger, getContent()); });
+                trigger.addEventListener('blur', () => { if (isDesktop()) hideTip(); });
+                trigger.addEventListener('click', e => {
                     if (!isDesktop()) {
                         e.preventDefault();
-                        openDrawer(a, i + 1);
+                        openDrawer(getContent(), label);
                     }
                 });
             });

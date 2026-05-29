@@ -29,12 +29,21 @@ const filterTags = Object.keys(tagCounts).sort((a, b) => a.localeCompare(b));
 ---
 
 {variant === 'full' && showFilter && (
-    <div class="tag-filter" role="group" aria-label="Filter by topic">
-        <button class="tag-btn active" data-tag="all">all</button>
-        {filterTags.map(tag => (
-            <button class="tag-btn" data-tag={tag}>{tag}<span class="tag-btn-count">{tagCounts[tag]}</span></button>
-        ))}
-    </div>
+    <details class="tag-filter">
+        <summary class="tag-filter-trigger" aria-label="Filter by topic">
+            Topic: <span class="tag-filter-current">all</span>
+            <svg class="tag-filter-chevron" width="13" height="13" aria-hidden="true"><use href="#icon-chevron-down" /></svg>
+        </summary>
+        <div class="tag-filter-menu" role="menu">
+            <button class="tag-option active" data-tag="all" role="menuitemradio" aria-checked="true">all</button>
+            {filterTags.map(tag => (
+                <button class="tag-option" data-tag={tag} role="menuitemradio" aria-checked="false">
+                    <span class="tag-option-name">{tag}</span>
+                    <span class="tag-option-count">{tagCounts[tag]}</span>
+                </button>
+            ))}
+        </div>
+    </details>
 )}
 
 {variant === 'full' ? (
@@ -124,8 +133,10 @@ const filterTags = Object.keys(tagCounts).sort((a, b) => a.localeCompare(b));
     });
 
     // Tag filter — full variant only
-    const filterBtns = document.querySelectorAll<HTMLButtonElement>('.tag-btn');
-    if (filterBtns.length > 0) {
+    const filter = document.querySelector<HTMLDetailsElement>('.tag-filter');
+    if (filter) {
+        const options = filter.querySelectorAll<HTMLButtonElement>('.tag-option');
+        const current = filter.querySelector<HTMLElement>('.tag-filter-current')!;
         const allItems = document.querySelectorAll<HTMLElement>('#writing-list li[data-tags]');
         const yearGroups = document.querySelectorAll<HTMLElement>('.post-list-group');
 
@@ -138,11 +149,19 @@ const filterTags = Object.keys(tagCounts).sort((a, b) => a.localeCompare(b));
             });
         }
 
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                const tag = btn.dataset.tag!;
+        options.forEach(opt => {
+            opt.addEventListener('click', () => {
+                options.forEach(o => {
+                    o.classList.remove('active');
+                    o.setAttribute('aria-checked', 'false');
+                });
+                opt.classList.add('active');
+                opt.setAttribute('aria-checked', 'true');
+
+                const tag = opt.dataset.tag!;
+                current.textContent = tag === 'all' ? 'all' : tag.toLowerCase();
+                current.setAttribute('data-tag', tag);
+
                 allItems.forEach(li => {
                     const tags = li.dataset.tags!.split(' ');
                     li.hidden = tag !== 'all' && !tags.includes(tag);
@@ -153,7 +172,16 @@ const filterTags = Object.keys(tagCounts).sort((a, b) => a.localeCompare(b));
                     group.hidden = !visible;
                 });
                 updateLastVisible();
+                filter.open = false;
             });
+        });
+
+        // Close on outside click or Escape.
+        document.addEventListener('click', e => {
+            if (filter.open && !filter.contains(e.target as Node)) filter.open = false;
+        });
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && filter.open) filter.open = false;
         });
     }
 

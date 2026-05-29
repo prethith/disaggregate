@@ -16,8 +16,8 @@
 }
 
 :root {
-    --grid-wide: 900px;
-    --grid-narrow: 580px;
+    --grid-wide: 72rem;
+    --grid-narrow: 48rem;
 
     --bg: #fafafa;
     --text: #1a1a1a;
@@ -29,15 +29,15 @@
        matches to Adobe Text — narrower and taller than Source Serif. */
     --font-body: 'Spectral', Georgia, serif;
     /* --font-body: 'STIX Two Text', serif; */
-    /* --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, monospace; */
-    --font-mono: 'IBM Plex Sans', sans-serif;
+    /* --font-sans: 'IBM Plex Mono', ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, monospace; */
+    --font-sans: 'IBM Plex Sans', sans-serif;
 
     /* Fluid modular type scale — one token per step, ~Minor Third (×1.2).
        Bounds in rem so they honour browser zoom. Never multiply these
        ad-hoc; pick the nearest step so relative sizing stays consistent. */
     --text-xs:   clamp(0.75rem,   0.722rem + 0.11vw, 0.8125rem); /* ~12 → 13px  bylines, fine print */
     --text-sm:   clamp(0.875rem,  0.847rem + 0.11vw, 0.9375rem); /* ~14 → 15px  meta, nav, captions */
-    --text-base: clamp(1.0625rem, 1.006rem + 0.23vw, 1.1875rem); /* ~17 → 19px  body */
+    --text-base: clamp(1.1rem, 1.006rem + 0.23vw, 1.3rem); /* ~17 → 19px  body */
     --text-lg:   clamp(1.25rem,   1.193rem + 0.23vw, 1.375rem);  /* ~20 → 22px  section headings */
     --text-xl:   clamp(1.4375rem, 1.324rem + 0.45vw, 1.6875rem); /* ~23 → 27px  post / page title */
 
@@ -86,7 +86,7 @@ body {
     color: var(--text);
     font-family: var(--font-body);
     font-size: var(--text-base);
-    line-height: 1.7;
+    line-height: 1.6;
     min-height: 100dvh;
     padding-top: var(--space);
     -webkit-font-smoothing: antialiased;
@@ -141,7 +141,7 @@ h1 {
    NAV
    ============================================================ */
 nav {
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     font-size: var(--text-sm);
     margin-bottom: calc(var(--space) * 2);
 }
@@ -327,7 +327,7 @@ nav.grid > * {
 [data-tag="Essay"]       { --tag-bg: var(--accent-5); --tag-bg-hover: var(--accent-5-hover); }
 
 .post-list-date {
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     font-size: var(--text-sm);
     color: var(--muted);
     flex-shrink: 0;
@@ -358,7 +358,7 @@ nav.grid > * {
 }
 
 .post-list-desc {
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     font-size: var(--text-sm);
     color: var(--muted);
     max-height: 0;
@@ -390,7 +390,7 @@ nav.grid > * {
     display: inline-block;
     margin-top: calc(var(--space) * 0.8);
     margin-left: auto;
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     font-size: var(--text-sm);
     color: var(--muted);
     transition: color 0.15s ease;
@@ -409,7 +409,7 @@ nav.grid > * {
     min-height:8rem;
     align-self: start;
 
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     font-size: var(--text-sm);
     color: var(--muted);
     line-height: 1.4;
@@ -427,7 +427,7 @@ nav.grid > * {
 }
 
 .reading-label {
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     font-size: var(--text-sm);
     font-weight: 500;
     color: var(--muted);
@@ -484,7 +484,7 @@ nav.grid > * {
 }
 
 .book-author {
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     font-size: var(--text-xs);
     color: var(--muted);
 }
@@ -496,7 +496,7 @@ nav.grid > * {
 footer {
     /* margin-top: calc(var(--space) * 2); */
     padding-block: calc(var(--space) * 1.5);
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     font-size: var(--text-sm);
 }
 
@@ -545,7 +545,7 @@ footer {
 @media (max-width: 1024px) {
     .grid {
         grid-template-columns:
-            [full-start] 1.25rem [wide-start narrow-start] minmax(0, 1fr) [narrow-end wide-end] 1.25rem [full-end];
+            [full-start] 1.15rem [wide-start narrow-start] minmax(0, 1fr) [narrow-end wide-end] 1.15rem [full-end];
     }
 
     .post-list-year {
@@ -573,7 +573,7 @@ footer {
 
     .grid {
         grid-template-columns:
-            [full-start] 1rem [wide-start narrow-start] minmax(0, 1fr) [narrow-end wide-end] 1rem [full-end];
+            [full-start] 0.3rem [wide-start narrow-start] minmax(0, 1fr) [narrow-end wide-end] 0.3rem [full-end];
     }
 
     nav {

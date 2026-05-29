@@ -1,6 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
 import MarkdownLayout from '../../layouts/MarkdownLayout.astro';
+import Figure from '../../components/Figure.astro';
+import Sidenote from '../../components/Sidenote.astro';
 
 export async function getStaticPaths() {
     const posts = await getCollection('posts');
@@ -21,5 +23,5 @@ const { Content } = await render(post);
     tags={post.data.tags}
     id={post.id}
 >
-    <Content />
+    <Content components={{ Figure, Sidenote }} />
 </MarkdownLayout>

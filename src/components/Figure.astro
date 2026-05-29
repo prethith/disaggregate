@@ -1,0 +1,20 @@
+---
+interface Props {
+    src: string;
+    alt: string;
+    width?: number;
+    height?: number;
+    full?: boolean;
+    credit?: string;
+    creditHref?: string;
+    creditLabel?: string;
+}
+
+const { src, alt, width, height, full = false, credit, creditHref, creditLabel } = Astro.props;
+const hasCredit = Boolean(credit || creditHref);
+---
+
+<figure class={full ? 'full-bleed' : undefined}>
+    <img src={src} alt={alt} width={width} height={height} loading="lazy" decoding="async" />
+    <figcaption><slot />{hasCredit && (<> <span class="figure-credit">{credit}{creditHref && (<> <a href={creditHref} target="_blank" rel="noopener">{creditLabel ?? creditHref}</a></>)}</span></>)}</figcaption>
+</figure>
