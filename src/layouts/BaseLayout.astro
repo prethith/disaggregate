@@ -44,7 +44,9 @@ const {
     <link rel="alternate" type="application/rss+xml" title="Disaggregate" href="/rss.xml" />
     <!-- Runs synchronously before first paint to set theme and suppress transitions -->
     <script is:inline>
-        document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+        const stored = localStorage.getItem('theme');
+        const system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = stored || system;
         document.documentElement.classList.add('no-transitions');
         requestAnimationFrame(function() {
             requestAnimationFrame(function() {

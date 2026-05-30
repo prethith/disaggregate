@@ -47,6 +47,8 @@
     --accent-3-hover: #faeaa0;
     --accent-4-hover: #bde0b4;
     --accent-5-hover: #d9beed;
+
+    --accent-2-selection: rgba(253, 224, 208, 0.55);
 }
 
 [data-theme="dark"] {
@@ -66,6 +68,8 @@
     --accent-3-hover: #a08018;
     --accent-4-hover: #4c8040;
     --accent-5-hover: #7c4e9e;
+
+    --accent-2-selection: rgba(160, 74, 40, 0.4);
 }
 
 
@@ -220,6 +224,11 @@ nav.grid > * {
 
 /* Suppress all transitions during initial paint so no theme-change animation fires */
 .no-transitions * { transition: none !important; }
+
+::selection {
+    background-color: var(--accent-2-selection);
+    color: var(--text);
+}
 
 
 /* ============================================================
