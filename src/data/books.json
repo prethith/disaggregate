@@ -23,7 +23,7 @@
         "author": "Guido Morselli",
         "isbn": "9781681370781",
         "status": "read",
-        "cover": "https://m.media-amazon.com/images/I/91B7+1KNRyL.jp"
+        "cover": "https://m.media-amazon.com/images/I/91B7+1KNRyL.jpg"
     },
     {
         "title": "Tokyo Express",
@@ -36,7 +36,8 @@
         "title": "The Age of Empire: 1875-1914",
         "author": "Eric Hobsbawm",
         "isbn": "9780679721754",
-        "status": "read"
+        "status": "read",
+        "cover": "https://m.media-amazon.com/images/I/811palXOmLL.jpg"
     },
     {
         "title": "Tyrant Banderas",
