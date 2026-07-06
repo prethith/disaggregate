@@ -1,0 +1,30 @@
+name: Update books from Google Sheet
+
+on:
+    schedule:
+        - cron: '0 9 1,15 * *'
+    workflow_dispatch: {}
+
+permissions:
+    contents: write
+
+jobs:
+    update:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+
+            - name: Fetch latest books
+              env:
+                  BOOKS_SHEET_CSV_URL: ${{ secrets.BOOKS_SHEET_CSV_URL }}
+              run: node scripts/fetch-books.mjs
+
+            - name: Commit if changed
+              uses: stefanzweifel/git-auto-commit-action@v5
+              with:
+                  commit_message: 'chore: update books from Google Sheets'
+                  file_pattern: src/data/books.json
