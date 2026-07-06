@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Desperately Seeking Shah Rukh",
+        "author": "Shrayana Bhattacharya",
+        "isbn": "9789354891939",
+        "status": "read"
+    },
+    {
+        "title": "Minor Detail",
+        "author": "Adania Shibli",
+        "isbn": "9781913097172",
+        "status": "read"
+    },
+    {
+        "title": "Experiences of Loveday Brooke, Lady Detective",
+        "author": "Catherine Pirkis",
+        "isbn": "9781973322443",
+        "status": "read",
+        "cover": "https://www.hachetteindia.com/Content/images/books/Large_Cover/9788196026905.jpg"
+    },
+    {
+        "title": "The Communist",
+        "author": "Guido Morselli",
+        "isbn": "9781681370781",
+        "status": "read",
+        "cover": "https://m.media-amazon.com/images/I/91B7+1KNRyL.jp"
+    },
+    {
+        "title": "Tokyo Express",
+        "author": "Seicho Matsumoto",
+        "isbn": "9780241439081",
+        "status": "read",
+        "cover": "https://m.media-amazon.com/images/I/91B7+1KNRyL.jpg"
+    },
+    {
+        "title": "The Age of Empire: 1875-1914",
+        "author": "Eric Hobsbawm",
+        "isbn": "9780679721754",
+        "status": "read"
+    },
+    {
+        "title": "Tyrant Banderas",
+        "author": "Ramón del Valle-Inclán",
+        "isbn": "9781590174982",
+        "status": "read",
+        "cover": "https://m.media-amazon.com/images/I/618-04WhrxL._SL1200_.jpg"
+    },
+    {
+        "title": "The Dogs of Riga",
+        "author": "Henning Mankell",
+        "isbn": "9780099570554",
+        "status": "read"
+    },
+    {
+        "title": "The Last Continent",
+        "author": "Terry Pratchett",
+        "isbn": "9780061059070",
+        "status": "reading",
+        "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9tVb1exYV1u_B8dJS30W0k3XZrQaC9V64-Ne35F-KDH10U9T6jtDu9gE&s=10"
+    }
+]

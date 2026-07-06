@@ -9,6 +9,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "fetch-books": "node --env-file=.env src/scripts/fetch-books.mjs",
     "astro": "astro"
   },
   "dependencies": {
