@@ -21,7 +21,7 @@ jobs:
             - name: Fetch latest books
               env:
                   BOOKS_SHEET_CSV_URL: ${{ secrets.BOOKS_SHEET_CSV_URL }}
-              run: node scripts/fetch-books.mjs
+              run: node src/scripts/fetch-books.mjs
 
             - name: Commit if changed
               uses: stefanzweifel/git-auto-commit-action@v5
